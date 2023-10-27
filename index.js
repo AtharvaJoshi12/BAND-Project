@@ -129,7 +129,7 @@ function recordNote(note) {
 function saveSong() {
   if (songNotes) {
     const serializedSongNotes = JSON.stringify(songNotes);
-    let saveAs = prompt("Save as : ");
+    let saveAs = "🎵 " + prompt("Save as : ");
     localStorage.setItem(saveAs, serializedSongNotes);
   }
 

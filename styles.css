@@ -8,7 +8,7 @@ body {
 /* ----------------------------------------------- heading ------------------------------------------------------ */
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ff4545;
   font-family: "Arvo", cursive;
 }
@@ -67,7 +67,7 @@ h1 {
 .drum {
   outline: none;
   border: 10px solid #ff4545;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Arvo", cursive;
   line-height: 2;
   font-weight: 900;
@@ -75,8 +75,8 @@ h1 {
   text-shadow: 3px 0 #dbedf3;
   border-radius: 30px;
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   text-align: center;
   margin: 10px;
   background-color: white;
@@ -149,15 +149,17 @@ h1 {
 }
 
 .mySongs h3 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  font-family: "Arvo", cursive;
 }
 
 .mySongs p {
   font-size: 16px;
   margin: 0;
   padding: 5px 0;
+  font-family: "Arvo", cursive;
 }
 
 button {
@@ -171,7 +173,7 @@ button {
   font-size: 14px;
 }
 
-button:hover {
+.mySongs button:hover {
   background-color: #0056b3;
 }
 

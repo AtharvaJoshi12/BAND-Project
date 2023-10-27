@@ -11,7 +11,7 @@ A web application that lets you play a virtual drum set right in your web browse
 - [License](#license)
 
 ## Demo
-https://atharvajoshi12.github.io/Drumkit/
+https://atharvajoshi12.github.io/DrumKit/
 
 ## Features
 - Interactive drum kit with various drum sounds.

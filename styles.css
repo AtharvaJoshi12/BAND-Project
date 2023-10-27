@@ -45,6 +45,9 @@ h1 {
 
 .set {
   margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* ----------------------------------------------- Images After Press ------------------------------------------------------ */
@@ -80,21 +83,26 @@ h1 {
 
 /* ----------------------------------------------- Footer ------------------------------------------------------ */
 
-footer {
-  color: #dbedf3;
-  font-family: "Dancing Script", cursive;
-  font-size: 143%;
-}
+@media (max-width: 1000px) {
+  .set {
+    width: 70%;
+  }
 
-/* @media(max-width:500px)
-{ 
-  body{
-    background-color:yellow;
+  .drum {
+    outline: none;
+    border: 10px solid #ff4545;
+    font-size: 7rem;
+    font-family: "Arvo", cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: #0e0e0e;
+    text-shadow: 3px 0 #dbedf3;
+    border-radius: 30px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
   }
-} */
-/* @media (max-width:1000px)
-{
-  body{
-    background-color:rgb(123, 255, 0);
-  }
-} */
+}

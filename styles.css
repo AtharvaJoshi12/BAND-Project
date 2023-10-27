@@ -1,11 +1,9 @@
-/* ----------------------------------------------- Body ------------------------------------------------------ */
+/* Reset some default styles */
 
 body {
   text-align: center;
   background-color: #171719;
 }
-
-/* ----------------------------------------------- heading ------------------------------------------------------ */
 
 h1 {
   font-size: 4rem;
@@ -13,7 +11,7 @@ h1 {
   font-family: "Arvo", cursive;
 }
 
-/* ----------------------------------------------- Images ------------------------------------------------------ */
+/* Image container styles */
 
 .w {
   background-image: url("images/tom1.webp");
@@ -50,20 +48,19 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* ----------------------------------------------- Images After Press ------------------------------------------------------ */
-
 .pressed {
   box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
 }
 
-/* ----------------------------------------------- Buttons ------------------------------------------------------ */
 .no {
   display: none;
 }
+
 #no {
   text-align: center;
 }
+
 .drum {
   outline: none;
   border: 10px solid #ff4545;
@@ -85,6 +82,8 @@ h1 {
 .drum:hover {
   cursor: pointer;
 }
+
+/* Record,save Button styles */
 
 .recordbtn {
   cursor: pointer;
@@ -135,6 +134,8 @@ h1 {
 .saveBtn.show {
   display: inline;
 }
+
+/* My Songs container styles */
 
 .mySongs {
   background-color: #f0f0f0;
@@ -190,7 +191,7 @@ button {
   margin: 10px;
 }
 
-/* ----------------------------------------------- Footer ------------------------------------------------------ */
+/* Responsive design for smaller screens */
 
 @media (max-width: 1000px) {
   .set {

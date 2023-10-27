@@ -1,21 +1,22 @@
+// Variables
+
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 let recordingStartTime;
 let songNotes;
+let savedSongNotes;
 
 displayAllKeysInDiv();
+
 for (var i = 0; i < numberOfDrumButtons; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var buttonInnerHTML = this.innerHTML;
-
     makeSound(buttonInnerHTML);
-
     buttonAnimation(buttonInnerHTML);
   });
 }
 
 document.addEventListener("keypress", function (event) {
   makeSound(event.key);
-
   buttonAnimation(event.key);
 });
 
@@ -152,13 +153,6 @@ function playSavedSong() {
   });
 }
 
-// let playMySavedSong = document.querySelector(".playSavedSong");
-
-// playMySavedSong.addEventListener("click", () => {
-//   retrieveSongNotes();
-//   playSavedSong();
-// });
-
 function getAllLocalStorageKeys() {
   const keys = [];
   for (let i = 0; i < localStorage.length; i++) {
@@ -211,12 +205,10 @@ function displayAllKeysInDiv() {
       });
 
       mySongsDiv.appendChild(songContainer);
-      // Append the play button and the song name to the song container
       songContainer.appendChild(songElement);
       songContainer.appendChild(btnContainer);
       btnContainer.appendChild(playButton);
       btnContainer.appendChild(deleteButton);
-      // Append the song container to the "mySongs" div
     }
   });
 }

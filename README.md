@@ -15,6 +15,7 @@ https://atharvajoshi12.github.io/DrumKit/
 
 ## Features
 - Interactive drum kit with various drum sounds.
+- Record and Save beats/song.
 - Responsive design for both desktop and mobile devices.
 - Easy-to-use interface for drumming enthusiasts.
 
